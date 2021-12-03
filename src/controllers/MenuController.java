@@ -25,11 +25,11 @@ public class MenuController{
     }
 
     @FXML
-    public void iniciarPartida(ActionEvent event2) throws IOException {
-        Stage window2 = (Stage) ((Node) event2.getSource()).getScene().getWindow();
+    public void iniciarPartida(ActionEvent event) throws IOException {
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-        window2.setScene(new Scene(FXMLLoader.load(getClass().getResource("../fxmls/Tabuleiro.fxml"))));
-        window2.setTitle("ChessQMate - TABULEIRO");
-        window2.show();
+        window.setScene(new Scene(FXMLLoader.load(getClass().getResource("../fxmls/Tabuleiro.fxml"))));
+        window.setTitle("ChessQMate - TABULEIRO");
+        window.show();
     }
 }
