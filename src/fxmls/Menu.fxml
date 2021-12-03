@@ -14,8 +14,8 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <Button fx:id="btnCadastrarJogadores" layoutX="64.0" layoutY="192.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="190.0" text="        Cadastrar Jogadores" />
-      <Button fx:id="btnIniciarPartida" layoutX="64.0" layoutY="270.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="190.0" text="   Iniciar Partida" />
+      <Button fx:id="btnCadastrarJogadores" layoutX="64.0" layoutY="192.0" mnemonicParsing="false" onAction="#cadastrarJogadores" prefHeight="47.0" prefWidth="190.0" text="        Cadastrar Jogadores" />
+      <Button fx:id="btnIniciarPartida" layoutX="64.0" layoutY="270.0" mnemonicParsing="false" onAction="#iniciarPartida" prefHeight="47.0" prefWidth="190.0" text="   Iniciar Partida" />
       <ImageView layoutX="190.0">
          <image>
             <Image url="@../imagens/logo.png" />
