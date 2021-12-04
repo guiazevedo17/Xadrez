@@ -31,5 +31,20 @@
             <Image url="@../imagens/botoes/play.png" />
          </image>
       </ImageView>
+      <ImageView layoutX="190.0">
+         <image>
+            <Image url="@../images/logo.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="86.0" layoutY="278.0">
+         <image>
+            <Image url="@../images/buttons/play.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="77.0" layoutY="200.0">
+         <image>
+            <Image url="@../images/buttons/register.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

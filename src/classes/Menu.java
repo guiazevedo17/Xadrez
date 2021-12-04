@@ -12,7 +12,7 @@ public class Menu extends Application{
     public void start(Stage stage) throws Exception {
         stage.setTitle("ChessQMate - MENU");
         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../fxmls/Menu.fxml"))));
-        stage.getIcons().add(new Image(getClass().getResourceAsStream("../imagens/icon.png")));
+        stage.getIcons().add(new Image(getClass().getResourceAsStream("../images/icon.png")));
         stage.show();
     }
 
@@ -20,4 +20,4 @@ public class Menu extends Application{
         launch(args);
     }
 
-}
+}  
