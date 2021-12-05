@@ -20,15 +20,18 @@ public class MenuController{
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
         window.setScene(new Scene(FXMLLoader.load(getClass().getResource("../fxmls/CadastroJogadores.fxml"))));
+        window.centerOnScreen();
         window.setTitle("ChessQMate - CADASTRO JOGADORES");
         window.show();
     }
 
     @FXML
     public void iniciarPartida(ActionEvent event) throws IOException {
+        
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
         window.setScene(new Scene(FXMLLoader.load(getClass().getResource("../fxmls/Tabuleiro.fxml"))));
+        window.centerOnScreen();
         window.setTitle("ChessQMate - TABULEIRO");
         window.show();
     }
