@@ -18,7 +18,7 @@ public abstract class Piece {
         this.image = image;
     }
     
-    public abstract boolean checkMovement(int destinyLine, int destinyColum); // Valida o movimento da peça recebendo a linha e a coluna de destino da mesma
+    public abstract boolean checkMovement(int destinyLine, int destinyColumn); // Valida o movimento da peça recebendo a linha e a coluna de destino da mesma
     
     public ColorEnum getColor(){ /* Getter Color */
         return this.color;
@@ -36,11 +36,11 @@ public abstract class Piece {
         this.line = line;
     }
 
-    public int getColum(){ /* Getter Colum */
+    public int getColumn(){ /* Getter Colum */
         return this.column;
     }
 
-    public void setColum(int column){ /* Setter Colum */
+    public void setColumn(int column){ /* Setter Colum */
         this.column = column;
     }
 
@@ -53,7 +53,7 @@ public abstract class Piece {
     }
 
     public boolean isCaptured(){ /* Getter Captured */
-        return this. captured;
+        return this.captured;
     }
 
     public void setCaptured(boolean captured){ /* Setter Captured */

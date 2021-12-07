@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch JChess",
+            "request": "launch",
+            "mainClass": "classes.visual.JChess",
+            "projectName": "Xadrez_1218ce1f"
+        },
+        {
+            "type": "java",
             "name": "Launch Animacao",
             "request": "launch",
             "mainClass": "classes.Animacao",

@@ -2,6 +2,7 @@ package controllers;
 
 import java.io.IOException;
 
+import classes.visual.JChess;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -38,10 +39,9 @@ public class MenuController{
             window.show();
             return;
         }
-        
-        window.setScene(new Scene(FXMLLoader.load(getClass().getResource("../fxmls/Board.fxml"))));
-        window.centerOnScreen();
-        window.setTitle("ChessQMate - TABULEIRO");
-        window.show();
+                
+        new JChess();
+
+        window.close();
     }
 }
