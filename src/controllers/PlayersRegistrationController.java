@@ -10,35 +10,35 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-public class CadastroJogadoresController {
+public class PlayersRegistrationController {
 
     @FXML
-    private TextField txtJogador1, txtJogador2;
+    private TextField txtPlayer1, txtPlayer2;
 
     @FXML
-    private Button btnCadastrar;
+    private Button btnRegister;
 
-    public static String jogador1 = "", jogador2 = "";
+    public static String player1 = "", player2 = "";
 
-    public static boolean cadastroCorreto = false;
+    public static boolean successfulRegistration = false;
 
     @FXML
-    void finalizarCadastro(ActionEvent event) throws IOException {
+    void finishRegistration(ActionEvent event) throws IOException {
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-        jogador1 = txtJogador1.getText();
-        jogador2 = txtJogador2.getText();
+        player1 = txtPlayer1.getText();
+        player2 = txtPlayer2.getText();
 
         window.setScene(new Scene(FXMLLoader.load(getClass().getResource("../fxmls/Menu.fxml"))));
         window.setTitle("ChessQMate - MENU");
         window.show();
     }
 
-    public static void verificaCadastro(){
-        cadastroCorreto = true;
+    public static void checkRegistration(){
+        successfulRegistration = true;
         
-        if(jogador1.isEmpty() == true || jogador2.isEmpty() == true)
-            cadastroCorreto = false;
+        if(player1.isEmpty() == true || player2.isEmpty() == true)
+            successfulRegistration = false;
     }
 
 }

@@ -9,7 +9,7 @@ import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
-public class Mensagens {
+public class MesagesController {
 
     @FXML
     private Button btnCadastroInconcluido;

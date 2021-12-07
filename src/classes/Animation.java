@@ -10,16 +10,16 @@ import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
-public class Animacao  extends Application{
+public class Animation extends Application{
 
     // Carregar imagens do arquivo images/animacao
-    final static javafx.scene.image.Image PAWN = new javafx.scene.image.Image(Animacao.class.getResource("../images/animation/pawn.png").toString());
-    final static javafx.scene.image.Image ROOK = new javafx.scene.image.Image(Animacao.class.getResource("../images/animation/rook.png").toString());
-    final static javafx.scene.image.Image KNIGHT = new javafx.scene.image.Image(Animacao.class.getResource("../images/animation/knight.png").toString());
-    final static javafx.scene.image.Image BISHOP = new javafx.scene.image.Image(Animacao.class.getResource("../images/animation/bishop.png").toString());
-    final static javafx.scene.image.Image QUEEN = new javafx.scene.image.Image(Animacao.class.getResource("../images/animation/queen.png").toString());
-    final static javafx.scene.image.Image KING = new javafx.scene.image.Image(Animacao.class.getResource("../images/animation/king.png").toString());
-    final static javafx.scene.image.Image FIGHT = new javafx.scene.image.Image(Animacao.class.getResource("../images/animation/blades.png").toString());
+    final static javafx.scene.image.Image PAWN = new javafx.scene.image.Image(Animation.class.getResource("../images/animation/pawn.png").toString());
+    final static javafx.scene.image.Image ROOK = new javafx.scene.image.Image(Animation.class.getResource("../images/animation/rook.png").toString());
+    final static javafx.scene.image.Image KNIGHT = new javafx.scene.image.Image(Animation.class.getResource("../images/animation/knight.png").toString());
+    final static javafx.scene.image.Image BISHOP = new javafx.scene.image.Image(Animation.class.getResource("../images/animation/bishop.png").toString());
+    final static javafx.scene.image.Image QUEEN = new javafx.scene.image.Image(Animation.class.getResource("../images/animation/queen.png").toString());
+    final static javafx.scene.image.Image KING = new javafx.scene.image.Image(Animation.class.getResource("../images/animation/king.png").toString());
+    final static javafx.scene.image.Image FIGHT = new javafx.scene.image.Image(Animation.class.getResource("../images/animation/blades.png").toString());
 
     // Cria um grupo Node
     private static Group piece;

@@ -19,7 +19,7 @@ public class MenuController{
     void cadastrarJogadores(ActionEvent event) throws IOException {
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-        window.setScene(new Scene(FXMLLoader.load(getClass().getResource("../fxmls/CadastroJogadores.fxml"))));
+        window.setScene(new Scene(FXMLLoader.load(getClass().getResource("../fxmls/PlayersRegistration.fxml"))));
         window.centerOnScreen();
         window.setTitle("ChessQMate - CADASTRO JOGADORES");
         window.show();
@@ -29,17 +29,17 @@ public class MenuController{
     void iniciarPartida(ActionEvent event) throws IOException {
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
         
-        CadastroJogadoresController.verificaCadastro();
+        PlayersRegistrationController.checkRegistration();;
         
-        if(CadastroJogadoresController.cadastroCorreto == false){
-            window.setScene(new Scene(FXMLLoader.load(getClass().getResource("../fxmls/CadastroNConcluido.fxml"))));
+        if(PlayersRegistrationController.successfulRegistration == false){
+            window.setScene(new Scene(FXMLLoader.load(getClass().getResource("../fxmls/UnsuccessfulRegistration.fxml"))));
             window.centerOnScreen();
             window.setTitle("ChessQMate - Cadastro não concluído");
             window.show();
             return;
         }
         
-        window.setScene(new Scene(FXMLLoader.load(getClass().getResource("../fxmls/Tabuleiro.fxml"))));
+        window.setScene(new Scene(FXMLLoader.load(getClass().getResource("../fxmls/Board.fxml"))));
         window.centerOnScreen();
         window.setTitle("ChessQMate - TABULEIRO");
         window.show();
