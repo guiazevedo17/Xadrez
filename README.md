@@ -1,18 +1,15 @@
-## Getting Started
+## Jogo de Xadrez
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Desenvolvido como projeto final da matéria de Paradigmas de Programação B.
+Aluno : Guilherme Gomes de Azevedo
+RA : 20130175
 
-## Folder Structure
+## Estrutura de Pastas
 
-The workspace contains two folders by default, where:
+- `src`: contém todo o projeto em si como executável, onde as alterações são feitas
+    - `classes`: contém as classes do projeto
+    - `controllers` : contém os controllers responsáveis pelas telas FXML
+    - `fxmls` :  contém todas as telas .FXML
+    - `images` : contém todas as imagens utilizadas durante o projeto
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
