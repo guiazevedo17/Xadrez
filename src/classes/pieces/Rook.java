@@ -9,9 +9,12 @@ public class Rook extends Piece{
 
     @Override
     public boolean checkMovement(int destinyLine, int destinyColumn) {
+        Piece destinyPiece = getBoard().getPiece(destinyLine, destinyColumn);
+
+        if(destinyLine != getLine() && destinyColumn != getColumn()){
+            return false;
+        }
         
         return true;
     }
-    
-
 }

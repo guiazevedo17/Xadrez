@@ -1,4 +1,4 @@
-package classes.visual;
+package classes.vision;
 
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
@@ -19,10 +19,22 @@ public class JSquare extends JPanel{ // Quadrados das respectivas posições do 
         this.jPiece = jPiece;
         this.line = jPiece.getPiece().getLine();
         this.column = jPiece.getPiece().getColumn();
+        
         this.add(jPiece);
 
-        if(jPiece.getPiece() != null && jPiece.getPiece().isSelected()){
-            this.setBorder(BorderFactory.createLineBorder(Color.BLUE, 5));
+        if(jPiece.getPiece() != null){
+            if(jPiece.getPiece().isSelected()){
+                this.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5));
+            }
+            /*
+            if(jPiece.getPiece().isPossible()){
+                this.setBorder(BorderFactory.createLineBorder(Color.GREEN, 5));
+            }
+
+            if(jPiece.getPiece().isCapturable()){
+                this.setBorder(BorderFactory.createLineBorder(Color.RED, 5));
+            }
+            */
         }
     }
 

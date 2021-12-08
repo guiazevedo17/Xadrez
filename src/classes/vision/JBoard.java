@@ -1,4 +1,4 @@
-package classes.visual;
+package classes.vision;
 
 import javax.swing.JPanel;
 import classes.Board;
@@ -34,9 +34,9 @@ public class JBoard extends JPanel implements MouseListener{
                 }
                 
                 if((i+j) % 2 == 0){
-                    jSquare.setBackground(Color.WHITE);
+                    jSquare.setBackground(new Color(241, 208, 188));
                 } else{
-                    jSquare.setBackground(Color.BLACK);
+                    jSquare.setBackground(new Color(144, 104, 79));
                 }
                 this.add(jSquare);
                 jSquare.addMouseListener(this);
@@ -44,6 +44,10 @@ public class JBoard extends JPanel implements MouseListener{
             }
         }
         this.revalidate();
+    }
+
+    public Board getBoard(){
+        return this.board;
     }
 
     @Override

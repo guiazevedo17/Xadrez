@@ -12,6 +12,8 @@ import javafx.util.Duration;
 
 public class Animation extends Application{
 
+    public static Scene scene;
+
     // Carregar imagens do arquivo images/animacao
     final static javafx.scene.image.Image PAWN = new javafx.scene.image.Image(Animation.class.getResource("../images/animation/pawn.png").toString());
     final static javafx.scene.image.Image ROOK = new javafx.scene.image.Image(Animation.class.getResource("../images/animation/rook.png").toString());
@@ -22,7 +24,7 @@ public class Animation extends Application{
     final static javafx.scene.image.Image FIGHT = new javafx.scene.image.Image(Animation.class.getResource("../images/animation/blades.png").toString());
 
     // Cria um grupo Node
-    private static Group piece;
+    public static Group piece;
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -44,7 +46,7 @@ public class Animation extends Application{
 
         // Animar as imagens das peças em loop
         Timeline t = new Timeline();
-        t.setCycleCount(3);
+        t.setCycleCount(Timeline.INDEFINITE);
 
         // Adiciona imagens na Timeline
         t.getKeyFrames().add(new KeyFrame(
@@ -91,8 +93,8 @@ public class Animation extends Application{
 
         t.play();
 
-        primaryStage.setScene(new Scene(piece, 318, 360));
-        primaryStage.setTitle("ChessQMate - Carregando...");
+        scene = new Scene(piece,318,360);
+        primaryStage.setScene(scene);
         primaryStage.show();
     }
 

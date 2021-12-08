@@ -9,6 +9,8 @@ public abstract class Piece {
     private String image; // Imagem a ser atribuida a cada peça
     private boolean captured = false; // Indica se a peça foi capturada   
     private boolean selected = false; // Indica se a peça foi selecionada
+    private boolean possible = false; // Indica se a posição é possível
+    private boolean capturable = false; // Indica se a peça é capturável
     private Board board; // Possibilita a validação de movimento da peça
 
     public Piece(ColorEnum color, int line, int column, String image){ // Contrutor de peça
@@ -74,6 +76,22 @@ public abstract class Piece {
 
     public void setBoard(Board board){ /* Setter Board */
         this.board = board;
+    }
+
+    public boolean isPossible() {
+        return this.possible;
+    }
+
+    public void setPossible(boolean possible){
+        this.possible = possible;
+    }
+
+    public boolean isCapturable() {
+        return this.capturable;
+    }
+
+    public void setCapturable(boolean capturable){
+        this.capturable = capturable;
     }
 
 }

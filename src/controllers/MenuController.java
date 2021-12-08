@@ -2,7 +2,7 @@ package controllers;
 
 import java.io.IOException;
 
-import classes.visual.JChess;
+import classes.vision.JChess;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -38,8 +38,8 @@ public class MenuController{
             window.setTitle("ChessQMate - Cadastro não concluído");
             window.show();
             return;
-        }
-                
+        }        
+        
         new JChess();
 
         window.close();

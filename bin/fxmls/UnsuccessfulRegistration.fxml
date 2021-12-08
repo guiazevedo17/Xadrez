@@ -7,16 +7,16 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="147.0" prefWidth="410.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MesagesController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="147.0" prefWidth="410.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UnsuccessfulRegistrationController">
    <children>
-      <ImageView layoutX="14.0" layoutY="33.0">
+      <ImageView fitHeight="61.0" fitWidth="60.0" layoutX="14.0" layoutY="33.0">
          <image>
             <Image url="@../images/messages/info.png" />
          </image>
       </ImageView>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="86.0" layoutY="49.0" prefHeight="17.0" prefWidth="317.0" text="Jogador(es) não cadastrado(s)">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="83.0" layoutY="48.0" prefHeight="17.0" prefWidth="317.0" text="Jogador(es) não cadastrado(s) !">
          <font>
-            <Font name="System Bold" size="22.0" />
+            <Font size="22.0" />
          </font>
       </Label>
       <Button fx:id="btnCadastroInconcluido" layoutX="170.0" layoutY="108.0" mnemonicParsing="false" onAction="#entendidoCadastroInconcluido" text="Entendido" />

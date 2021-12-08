@@ -8,7 +8,7 @@ import classes.pieces.Pawn;
 import classes.pieces.Piece;
 import classes.pieces.Queen;
 import classes.pieces.Rook;
-import classes.visual.JChess;
+import classes.vision.JChess;
 
 public class Board {
     
@@ -142,6 +142,12 @@ public class Board {
             this.pieces[piece.getLine()][piece.getColumn()] = null;
             piece.setLine(destinyLine);
             piece.setColumn(destinyColumn);
+            
+            if(piece instanceof Pawn){ // verifica se é um Peão pra possibilitar andar 2 casas no primeiro movimento
+                Pawn pawn = (Pawn) piece;
+                pawn.setFirstMovement(false);
+            }
+
             this.setPiece(piece);
             this.selectPiece(piece);
             this.reverseTurn();

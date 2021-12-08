@@ -1,4 +1,4 @@
-package classes.visual;
+package classes.vision;
 
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;

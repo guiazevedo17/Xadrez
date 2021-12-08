@@ -1,4 +1,9 @@
-package classes.visual;
+package classes.vision;
+
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -6,12 +11,9 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import java.awt.BorderLayout;
-
 import classes.Board;
 import classes.pieces.ColorEnum;
 import controllers.PlayersRegistrationController;
-import java.awt.GridLayout;
 
 public class JChess extends JFrame{
 
@@ -19,9 +21,10 @@ public class JChess extends JFrame{
     
     private static JLabel lblTurn;
     
-    private Board board;
+    private final Board board;
    
-    private JButton btnDraw, btnGiveup;
+    private final JButton btnDraw, btnGiveup;
+
     
     public JChess(){ // Constrói Objeto Xadrez que é a Tela onde ocorre todo o jogo
         icon = new ImageIcon("src/images/icon.png");
@@ -29,17 +32,18 @@ public class JChess extends JFrame{
         setTitle("ChessQMate - TABULEIRO");
         this.setLayout(new BorderLayout());
         this.board = new Board();
-        this.add(new JBoard(board), BorderLayout.CENTER);
+        final JBoard jBoard = new JBoard(board);
+        this.add(jBoard, BorderLayout.CENTER);
         this.setLocationRelativeTo(null);
         
         /* Painel que mostra Qual jogador está na vez */
-        JPanel pnTop = new JPanel();
-        lblTurn = new JLabel("Vez de : " +PlayersRegistrationController.player1 +" - BRANCO"); // Cria o Label que mostrará o jogador da vez
+        final JPanel pnTop = new JPanel();
+        lblTurn = new JLabel("Vez de : " +PlayersRegistrationController.player1 +" - BRANCAS"); // Cria o Label que mostrará o jogador da vez
         pnTop.add(lblTurn); // Adiciona o Label ao Painel
         this.add(pnTop, BorderLayout.NORTH); // Adiciona Painel do topo
 
         /* Painel Lateral para área de controle do jogador */
-        JPanel pnSide = new JPanel();
+        final JPanel pnSide = new JPanel();
         pnSide.setLayout(new GridLayout(10, 1));
         
         /* Cria os botões de Empate e Desistir */
@@ -51,6 +55,25 @@ public class JChess extends JFrame{
         pnSide.add(btnGiveup);
 
         this.add(pnSide, BorderLayout.EAST); // Adiciona Painel lateral
+
+        /* Adiciona as ações dos botões */
+        btnDraw.addActionListener(new ActionListener() {
+            
+            public void actionPerformed(ActionEvent event){
+                
+            } 
+
+        });
+
+        btnGiveup.addActionListener(new ActionListener() {
+            
+            public void actionPerformed(ActionEvent event){
+                
+            }
+
+        });
+
+        /* Painel para mostrar qual cor de peça está na vez */
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.pack();
