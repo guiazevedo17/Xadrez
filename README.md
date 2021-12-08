@@ -20,4 +20,5 @@ A Tela do tabuleiro é aberta em seguir e nela encontram-se as peças de cada jo
 ### Considerações Finais
 
 Apesar de até a data de entrega 07/12/2021 o projeto não ter atingido sua versão final cumprindo todos os requisítos, o progresso do projeto em si e a evolução pessoal foram extremamente significativas, uma vez que foi-se adiquirido uma gigantesca quantidade de conhecimento e uma vontade maior pela busca de novos meios de solucionar os desafios a nós requisitados.</br>
-Gostaria de agradecer a Pontifícia Universidade Católica de Campinas e aos professores Leandro Alonso Xastre e Daniele Cristina Uchoa Maia Rodrigues que ministraram a matéria durante o segundo semestre de 2021 e nos possibilitaram essa experiência de primeiro contato com a linguagem Java e seus conceitos de programação orientada a objetos.
+Gostaria de agradecer a Pontifícia Universidade Católica de Campinas e aos professores Leandro Alonso Xastre e Daniele Cristina Uchoa Maia Rodrigues que ministraram a matéria durante o segundo semestre de 2021 e nos possibilitaram essa experiência de primeiro contato com a linguagem Java e seus conceitos de programação orientada a objetos.</br>
+O projeto encontra-se na release 0.6 por conta de ainda faltarem alguns pontos para atingir sua primeira versão 1.0.
